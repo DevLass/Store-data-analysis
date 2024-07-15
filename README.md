@@ -1,6 +1,6 @@
-# Store-data-analysis
+<h1 align="center"> Hey there, i'm Lass, and this is my Store data analysis</h1>
 
-# Imagem da Dashboard Completa
+<h3 align="justify"> <i> Firstly, let me clarify that all this data is fictitious and was used only for my studies.</i> </h3>
 
 ```
 # File location and type
@@ -44,6 +44,10 @@ GROUP BY `Product Category`;
 
 # Imagem do Grafico de Unidades vendidas x Categoria
 
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g1.png" alt="Page Preview">
+</p>
+
 ```
 %sql
 
@@ -64,6 +68,10 @@ GROUP BY `Product Category`;
 
 # Imagem do Grafico de Valor Vendido por Categoria
 
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g2.png" alt="Page Preview">
+</p>
+
 ```
 %sql
 
@@ -74,6 +82,9 @@ GROUP BY `Product Category`;
 ```
 
 # Imagem do Grafico de Média de Preços por Categoria
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g3.png" alt="Page Preview">
+</p>
 
 ```
 %sql
@@ -86,6 +97,9 @@ ORDER BY UnitsSold DESC;
 ```
 
 # Imagem da tabela dos produtos mais vendidos
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g4.png" alt="Page Preview">
+</p>
 
 ```
 %sql
@@ -97,6 +111,9 @@ GROUP BY `Region`;
 ```
 
 # Imagem do Grafico de Lugares Vendidos
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g5.png" alt="Page Preview">
+</p>
 
 ```
 %sql
@@ -108,6 +125,9 @@ GROUP BY `Payment Method`;
 ```
 
 # Imagem do Grafico dos Metódos de pagamento
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g6.png" alt="Page Preview">
+</p>
 
 ```
 %sql
@@ -120,4 +140,7 @@ ORDER BY to_date(`Date`, 'M/d/yyyy') ASC;
 ```
 
 # Imagem do Grafico de vendas por dia
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g7.png" alt="Page Preview">
+</p>
 
