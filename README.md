@@ -1,4 +1,4 @@
-<h1 align="center"> Hey there, i'm Lass, and this is my Store data analysis</h1>
+<h1 align="center"> Hey there, i'm Lass, and this is one store data analysis on databricks! </h1>
 
 <h4 align="center"> <i> Firstly, let me clarify that all this data is fictitious and was used only for my studies. </i> </h4>
 
@@ -176,4 +176,14 @@ ORDER BY to_date(`Date`, 'M/d/yyyy') ASC;
 <p align="center">
   <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g7.png" alt="Page Preview">
 </p>
+
+<h4 align="justify"> <i>In the future, I would like to do a monthly analysis by filter, as is possible in Google Data Studio or Power BI. I welcome and appreciate any ideas, and am open to every contribution :p.</i> </h4>
+
+<h4 align="justify">
+Thanks for reading, see you soon
+</h4>
+
+> *Never stop the griding.*
+ 
+
 
