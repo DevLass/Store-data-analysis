@@ -1,6 +1,15 @@
 <h1 align="center"> Hey there, i'm Lass, and this is my Store data analysis</h1>
 
-<h3 align="justify"> <i> Firstly, let me clarify that all this data is fictitious and was used only for my studies.</i> </h3>
+<h3 align="center"> <i> Firstly, let me clarify that all this data is fictitious and was used only for my studies. </i> </h3>
+
+<p align="center">
+  <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g0.png" alt="Page Preview">
+</p>
+
+<h2 align="center"> <i> Let me show my code!!</i> </h2>
+
+<h3 align="justify"> <i> This script reads a CSV file into a Spark DataFrame using specified options (no schema inference, the first row as the header, and a comma delimiter). <br><br> It then displays the DataFrame and creates a temporary SQL table named "StoreData" from it. The file location and type are specified at the beginning of the script.
+</i> </h3>
 
 ```
 # File location and type
@@ -29,9 +38,9 @@ temp_table_name = "StoreData"
 df.createOrReplaceTempView(temp_table_name)
 
 ```
-
-# Imagem da Tabela
-
+<h3 align="justify"> <i> 
+This SQL code is executed within a Spark SQL environment to aggregate sales data by product category.
+</i> </h3>
 
 ```
 %sql
@@ -42,11 +51,13 @@ GROUP BY `Product Category`;
 
 ```
 
-# Imagem do Grafico de Unidades vendidas x Categoria
-
 <p align="center">
   <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g1.png" alt="Page Preview">
 </p>
+
+<h3 align="justify"> <i> 
+This SQL code is executed to aggregate revenue data by product category, but it encountered an issue due to the presence of a `$` symbol in the `Total Revenue` column values.
+</i> </h3>
 
 ```
 %sql
@@ -56,7 +67,9 @@ FROM `StoreData`
 GROUP BY `Product Category`;
 ```
 
-# Falar que não funcionou
+<h3 align="justify"> <i> 
+Now the SQL query calculates the total revenue for each product category by first removing the `$` symbol from the `Total Revenue` column values and then converting them to a decimal format. The cleaned values are summed and the results are grouped by `Product Category`.
+</i> </h3>
 
 ```
 %sql
@@ -66,11 +79,13 @@ FROM `StoreData`
 GROUP BY `Product Category`;
 ```
 
-# Imagem do Grafico de Valor Vendido por Categoria
-
 <p align="center">
   <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g2.png" alt="Page Preview">
 </p>
+
+<h3 align="justify"> <i> 
+This SQL query calculates the average revenue for each product category by first removing the `$` symbol from the `Total Revenue` column values and then converting them to a decimal format. The average revenue is rounded to one decimal place, and the results are grouped by `Product Category`.
+</i> </h3>
 
 ```
 %sql
@@ -81,7 +96,10 @@ GROUP BY `Product Category`;
 
 ```
 
-# Imagem do Grafico de Média de Preços por Categoria
+<h3 align="justify"> <i> 
+
+</i> </h3>
+
 <p align="center">
   <img src="https://github.com/DevLass/Store-data-analysis/blob/main/readmeimg/g3.png" alt="Page Preview">
 </p>
